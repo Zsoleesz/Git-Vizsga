@@ -23,7 +23,10 @@ function loadSong(song){
     title.innerText = song;
     audio.src = `music/${song}.mp3`;
     cover.src = `images/${song}.jpg`;
+
 }
+
+console.log('rögzítjük a változtatást');
 
 //Zene lejátszása
 function playSong(){
@@ -94,5 +97,6 @@ prevBtn.addEventListener("click", prevSong);
 
 //Ha a zene végetért lépjen a következőre
 audio.addEventListener("ended", nextSong);
+
 
 
